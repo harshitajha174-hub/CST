@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Website</title>
+</head>
+<!-- Task 2: Split top row (20% height) and bottom row (80% height) -->
+<frameset rows="20%,80%">
+    <!-- Task 1 & 4: Load the header page -->
+    <frame src="header.html" name="headerFrame" scrolling="no" noresize>
+    
+    <!-- Task 2: Split bottom row into two columns (25% navigation, 75% content) -->
+    <frameset cols="25%,75%">
+        <!-- Task 4 & 5: Load navigation and name it appropriately -->
+        <frame src="nav.html" name="navFrame">
+        <!-- Task 4 & 5: Load default home content and give it a target name -->
+        <frame src="home.html" name="mainContentFrame">
+    </frameset>
+</frameset>
+</html>

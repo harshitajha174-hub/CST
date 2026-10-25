@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Course Registration</title>
+</head>
+<body>
+
+    <h1>Online Course Registration Form</h1>
+
+    <form action="submit_registration.php" method="POST" target="_blank">
+
+        <!-- Task 7: Hidden input field with fixed value -->
+        <input type="hidden" name="form_type" value="Online Course Registration">
+
+        <!-- Task 2, 3 & 11: Mandatory inputs with placeholders and required attributes -->
+        <p>
+            <label for="student-name">Student Name:</label><br>
+            <input type="text" id="student-name" name="student_name" placeholder="Enter your full name" required>
+        </p>
+
+        <p>
+            <label for="email-address">Email Address:</label><br>
+            <input type="email" id="email-address" name="email_address" placeholder="example@email.com" required>
+        </p>
+
+        <p>
+            <label for="mobile-number">Mobile Number:</label><br>
+            <input type="tel" id="mobile-number" name="mobile_number" placeholder="Enter 10-digit number" required>
+        </p>
+
+        <p>
+            <label for="student-age">Age:</label><br>
+            <input type="number" id="student-age" name="student_age" placeholder="Age" min="1" max="100">
+        </p>
+
+        <!-- Task 8: Date of Birth field using 'date' and Preferred Class Time using 'time' -->
+        <p>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="date_of_birth">
+        </p>
+
+        <p>
+            <label for="class-time">Preferred Class Time:</label><br>
+            <input type="time" id="class-time" name="preferred_time">
+        </p>
+
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </p>
+
+        <!-- Task 4 & 11: Mandatory Gender radio buttons -->
+        <p>
+            <label>Gender:</label><br>
+            <input type="radio" id="gender-male" name="gender" value="Male" required>
+            <label for="gender-male">Male</label>
+            
+            <input type="radio" id="gender-female" name="gender" value="Female">
+            <label for="gender-female">Female</label>
+            
+            <input type="radio" id="gender-other" name="gender" value="Other">
+            <label for="gender-other">Other</label>
+        </p>
+
+        <!-- Task 5: Skills checkboxes -->
+        <p>
+            <label>Skills:</label><br>
+            <input type="checkbox" id="skill-html" name="skills" value="HTML">
+            <label for="skill-html">HTML</label>
+            
+            <input type="checkbox" id="skill-css" name="skills" value="CSS">
+            <label for="skill-css">CSS</label>
+            
+            <input type="checkbox" id="skill-js" name="skills" value="JavaScript">
+            <label for="skill-js">JavaScript</label>
+            
+            <input type="checkbox" id="skill-python" name="skills" value="Python">
+            <label for="skill-python">Python</label>
+        </p>
+
+        <!-- Task 6: Course Selection Dropdown List -->
+        <p>
+            <label for="course-select">Select Course:</label><br>
+            <select id="course-select" name="course_selection">
+                <option value="">-- Choose a Program --</option>
+                <option value="bca">BCA (Computer Applications)</option>
+                <option value="btech">B.Tech (Information Technology)</option>
+                <option value="bsc">B.Sc (Computer Science)</option>
+            </select>
+        </p>
+
+
+        <!-- Task 10: File upload field allowing document or photograph -->
+        <p>
+            <label for="upload-doc">Upload Document / Photograph:</label><br>
+            <input type="file" id="upload-doc" name="student_document">
+        </p>
+
+        <!-- Task 9: Address/Additional Information using a <textarea> -->
+        <p>
+            <label for="address-info">Address / Additional Information:</label><br>
+            <textarea id="address-info" name="address_additional_info" rows="5" cols="45" placeholder="Enter your full address or extra details here..."></textarea>
+        </p>
+
+        <!-- Task 12: Submit and Reset controls using the <input> element -->
+        <p>
+            <input type="submit" value="Register Now">
+            <input type="reset" value="Clear Form">
+        </p>
+
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Title requirement -->
+    <title>Readers' Haven- Book Registration & Order Form</title>
+</head>
+<body>
+
+    <h1>Readers' Haven- Book Registration & Order Form</h1>
+
+    <!-- Task 1: form tag with suitable action and target attributes -->
+    <form action="submit_order.php" method="POST" target="_blank">
+
+        <!-- Task 9: Hidden input field with a fixed value -->
+        
+
+        <!-- Task 2 & 3: Customer details with appropriate types and placeholders -->
+        <p>
+            <label for="customer-name">Customer Name:</label><br>
+            <input type="text" id="customer-name" name="customer_name" placeholder="Enter your full name" required>
+        </p>
+
+        <p>
+            <label for="email-address">Email Address:</label><br>
+            <input type="email" id="email-address" name="email_address" placeholder="name@example.com" required>
+        </p>
+
+        <p>
+            <label for="mobile-number">Mobile Number:</label><br>
+            <input type="tel" id="mobile-number" name="mobile_number" placeholder="Enter 10-digit mobile number" required>
+        </p>
+
+        <p>
+            <label for="customer-age">Age:</label><br>
+            <input type="number" id="customer-age" name="customer_age" placeholder="Age" min="1" max="120">
+        </p>
+
+        <p>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Create a secure password" required>
+        </p>
+
+        <!-- Task 5: Favorite Book Category dropdown list (required selection) -->
+        <p>
+            <label for="book-category">Favorite Book Category:</label><br>
+            <select id="book-category" name="favorite_category" required>
+                <option value="">-- Choose Category --</option>
+                <option value="fiction">Fiction</option>
+                <option value="science">Science</option>
+                <option value="history">History</option>
+                <option value="children">Children's Books</option>
+            </select>
+        </p>
+
+        <!-- Task 6: Book Title and Quantity with a set minimum quantity -->
+        <p>
+            <label for="book-title">Book Title:</label><br>
+            <input type="text" id="book-title" name="book_title" placeholder="Enter the book title you want to buy" required>
+        </p>
+
+        <p>
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="order_quantity" value="1" min="1">
+        </p>
+
+        <!-- Task 4: Delivery Date and Preferred Delivery Time elements -->
+        <p>
+            <label for="delivery-date">Delivery Date:</label><br>
+            <input type="date" id="delivery-date" name="delivery_date">
+        </p>
+
+        <p>
+            <label for="delivery-time">Preferred Delivery Time:</label><br>
+            <input type="time" id="delivery-time" name="preferred_time">
+        </p>
+
+        <!-- Task 7: Preferred Payment Method radio buttons -->
+        <p>
+            <label>Preferred Payment Method:</label><br>
+            <input type="radio" id="pay-cod" name="payment_method" value="Cash on Delivery" checked>
+            <label for="pay-cod">Cash on Delivery</label>
+            
+            <input type="radio" id="pay-online" name="payment_method" value="Online Payment">
+            <label for="pay-online">Online Payment</label>
+        </p>
+
+        <!-- Task 8: Additional Services checkboxes -->
+        <p>
+            <label>Additional Services:</label><br>
+            <input type="checkbox" id="srv-wrap" name="services" value="Gift Wrapping">
+            <label for="srv-wrap">Gift Wrapping</label><br>
+            
+            <input type="checkbox" id="srv-bookmark" name="services" value="Bookmark">
+            <label for="srv-bookmark">Bookmark</label><br>
+            
+            <input type="checkbox" id="srv-express" name="services" value="Express Delivery">
+            <label for="srv-express">Express Delivery</label><br>
+            
+            <input type="checkbox" id="srv-card" name="services" value="Greeting Card">
+            <label for="srv-card">Greeting Card</label>
+        </p>
+
+        <!-- Task 10: File upload field with an accept attribute -->
+        <p>
+            <label for="reference-file">Upload Reference Image/Document:</label><br>
+            <input type="file" id="reference-file" name="reference_file" accept="image/*,.pdf,.doc,.docx">
+        </p>
+
+        <!-- Task 3 & 11: Delivery Address and Special Instructions textareas -->
+        <p>
+            <label for="delivery-address">Delivery Address:</label><br>
+            <textarea id="delivery-address" name="delivery_address" rows="4" cols="50" placeholder="Enter your full street address here..." required></textarea>
+        </p>
+
+        <p>
+            <label for="special-instructions">Special Instructions:</label><br>
+            <textarea id="special-instructions" name="special_instructions" rows="3" cols="50" placeholder="Any specific instructions for delivery (e.g., ring bell)..."></textarea>
+        </p>
+
+        <!-- Task 12: Submit and Reset controls using the <button> element -->
+        <p>
+            <button type="submit">Place Order</button>
+            <button type="reset">Reset Form</button>
+        </p>
+
+    </form>
+
+</body>
+</html>

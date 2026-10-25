@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Requirement: Title the web page "Student Examination Result" -->
+    <title>Student Examination Result</title>
+    
+</head>
+<body>
+
+    <div class="title-box">Student Examination Result</div>
+
+    <!-- Requirement: Table attributes border, cellpadding, and cellspacing -->
+    <table border="1" cellpadding="8" cellspacing="0">
+        
+        <!-- Row 1: Top header utilizing rowspan and colspan -->
+        <tr align="center">
+            <th rowspan="2">S. No.</th>
+            <th rowspan="2">Student Name</th>
+            <th rowspan="2">Roll Number</th>
+            <!-- Colspan requirement to span over the 3 subject columns -->
+            <th colspan="3">Subjects</th>
+            <th rowspan="2">Total</th>
+            <th rowspan="2">Result</th>
+        </tr>
+
+        <!-- Row 2: Sub-headers for individual subjects -->
+        <tr align="center">
+            <th>Science</th>
+            <th>Maths</th>
+            <th>English</th>
+        </tr>
+
+        <!-- Student Data Rows -->
+        <tr align="center">
+            <td>1</td>
+            <td align="left">Aarav Sharma</td>
+            <td>101</td>
+            <td>85</td>
+            <td>90</td>
+            <td>78</td>
+            <td>253</td>
+            <td class="pass">Pass</td>
+        </tr>
+        <tr align="center">
+            <td>2</td>
+            <td align="left">Neha Gupta</td>
+            <td>102</td>
+            <td>92</td>
+            <td>88</td>
+            <td>95</td>
+            <td>275</td>
+            <td class="pass">Pass</td>
+        </tr>
+        <tr align="center">
+            <td>3</td>
+            <td align="left">Rohan Mehta</td>
+            <td>103</td>
+            <td>76</td>
+            <td>82</td>
+            <td>70</td>
+            <td>228</td>
+            <td class="pass">Pass</td>
+        </tr>
+        <tr align="center">
+            <td>4</td>
+            <td align="left">Sneha Verma</td>
+            <td>104</td>
+            <td>68</td>
+            <td>74</td>
+            <td>72</td>
+            <td>214</td>
+            <td class="fail">Fail</td>
+        </tr>
+        <tr align="center">
+            <td>5</td>
+            <td align="left">Karan Singh</td>
+            <td>105</td>
+            <td>88</td>
+            <td>93</td>
+            <td>85</td>
+            <td>266</td>
+            <td class="pass">Pass</td>
+        </tr>
+
+        <!-- Class Average Row utilizing Colspan -->
+        <tr align="center" style="font-weight: bold; background-color: #f2f2f2;">
+            <!-- Colspan to merge S.No, Name, and Roll Number cells -->
+            <td colspan="3" align="right">Class Average</td>
+            <td>81.8</td>
+            <td>85.4</td>
+            <td>80.0</td>
+            <td>247.2</td>
+            <td>-</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>

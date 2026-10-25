@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explore the World – Travel Agency</title>
+</head>
+<!-- Task 2 & 5: Horizontal split for Header, Main Content, and Footer -->
+<frameset rows="20%,65%,15%" frameborder="1" border="5">
+    
+    <!-- Task 1, 4 & 8: Top row header frame using travel_ prefix -->
+    <frame src="travel_header.html" name="headerFrame" scrolling="no" noresize marginwidth="10" marginheight="10">
+    
+    <!-- Task 3, 5 & 6: Nested frameset splitting Main Content into 3 columns -->
+    <frameset cols="25%,45%,30%">
+        <!-- Task 6 & 8: Side-by-side modular frame containers -->
+        <frame src="travel_nav.html" name="navigationFrame" scrolling="auto" marginwidth="15" marginheight="15">
+        <frame src="travel_home.html" name="destinationFrame" scrolling="auto" marginwidth="15" marginheight="15">
+        <frame src="travel_packages.html" name="packageFrame" scrolling="auto" marginwidth="15" marginheight="15">
+    </frameset>
+    
+    <!-- Task 4, 8 & 10: Bottom row footer frame -->
+    <frame src="travel_footer.html" name="footerFrame" scrolling="no" noresize marginwidth="5" marginheight="5">
+
+</frameset>
+</html>

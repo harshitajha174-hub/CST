@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Requirement: Title the webpage "World Map Explorer" -->
+    <title>World Map Explorer</title>
+    
+</head>
+<body>
+
+<div class="map-box">
+    <h1>World Map Explorer</h1>
+    <p>Click on different countries on the map to explore their information in a new tab!</p>
+
+    <!-- 1. The World Map Image linked to the image-map -->
+    <img src="worldmap.jpg" usemap="#worldmap" alt="World Map">
+
+    <map name="worldmap">
+        
+        
+        <area shape="circle" coords="1028,564,61" href="https://www.britannica.com/place/India" target="_blank" alt="India (Asia)">
+
+        <!-- Requirement: rect area -->
+        <area shape="rect" coords="222,409,489,549" href="https://www.britannica.com/place/United-States" target="_blank" alt="United States (North America)">
+
+        <!-- Requirement: poly area -->
+        <area shape="poly" coords="458,619,383,677,512,809,591,684" href="https://www.britannica.com/summary/Brazil" target="_blank" alt="Brazil (South America)">
+
+        <!-- Requirement: default area -->
+        <area shape="default" href="https://www.britannica.com/science/ocean" target="_blank" alt="Ocean and other territories">
+
+    </map>
+</div>
+
+</body>
+</html>
